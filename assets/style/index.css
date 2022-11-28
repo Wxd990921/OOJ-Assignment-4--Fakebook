@@ -1,0 +1,109 @@
+@import "./reset.css";
+
+body {
+  font-family: 'Kanit', serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 900px;
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  transition-duration: 2ms;
+}
+
+.input {
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.message {
+  height: 80%;
+  width: 75%;
+  font-size: 20px;
+  border: solid 2px black;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.btn {
+  height: 80%;
+  width: 22.5%;
+  border: solid 2px black;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.btn:hover {
+  border: solid 2px darkgrey;
+  background-color: ghostwhite;
+  color: darkgray;
+}
+
+.btn:active {
+  border: solid 2px darkgrey;
+  background-color: ghostwhite;
+  color: darkgray;
+  position: relative;
+  top: 1px;
+  transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  -o-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+
+}
+
+
+
+.output {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+}
+
+.comment {
+  border: solid 2px black;
+  max-width: 320px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+  word-break: break-all;
+  min-height: 50px;
+  font-size: 25px;
+}
+
+li {
+  list-style: none;
+  
+}
+.delete {
+  align-self: end;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+
+a {
+  font-size: 15px;
+  text-decoration: none;
+  color: dimgray;
+
+}
+
+a:active {
+  text-decoration: blink
+}
+
+a:hover {
+  text-decoration: underline;
+  color: red
+}
